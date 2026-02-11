@@ -17,11 +17,11 @@ Each folder is a short lab exploring a new concept.
 
 ## Projects
 
-**01 — LED Blink**
-Blink an LED using a clock divider.
+* **01 — LED Blink**
+  Blink an LED using a clock divider.
 
-**02 — Switch → LED Mirror**
-Wire the 16 slide switches directly to the 16 LEDs.
+* **02 — Switch → LED Mirror**
+  Wire the 16 slide switches directly to the 16 LEDs.
 
 ---
 
