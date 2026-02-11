@@ -1,27 +1,25 @@
-# Basys 3 LED Blink (FPGA)
+# 01 — LED Blink
 
-My first FPGA project using Verilog and AMD Vivado.
+## Aim
 
-## Board
-Digilent Basys 3 (Artix-7)
+My first FPGA project: get an LED blinking on the Basys3 board.
 
-## Description
-This project divides the onboard 100 MHz clock to blink LED0 at a frequency f of roughly 1 Hz.  
-It serves as a simple “hello world” design to confirm the toolchain, board setup, and programming workflow.
+This was mainly about getting used to Vivado and the overall FPGA workflow.
 
-## Concepts
-1. FPGA clock signal (100 MHz on Basys3)
-2. Clock division using a counter
-3.Generating a bitstream in Vivado
-4. Programming the FPGA board
+## What I learned
 
-## How to build and run
-1. Open the `.xpr` project in Vivado.
-2. Run synthesis, implementation, and generate the bitstream.
-3. Connect the Basys 3 via USB (JTAG mode).
-4. Program the FPGA using Hardware Manager.
+* The Basys3 has a 100 MHz clock
+* That clock is far too fast to see directly
+* A counter (clock divider) is needed to slow it down
+* How to generate a bitstream and programme the board
 
-## Notes
-This repository contains only source and project files.  
-Generated build artefacts are excluded via `.gitignore`.
+## How it works
+
+A counter counts clock cycles and toggles an LED once it reaches a set value.
+This effectively slows the 100 MHz clock down to a visible blink.
+
+## Files
+
+* `blink.v` — Verilog design
+* `basys3.xdc` — pin constraints
 
