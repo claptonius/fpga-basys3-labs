@@ -16,10 +16,11 @@ Each folder is a short lab exploring a new concept.
 ---
 
 ## Projects
+<ul>
+  <li>LED Blink</li>
+  <li>Switch to LED Mirror</li>
+</ul>
 
-LED Blink
-
-Switch to LED Mirror
 
 ---
 
