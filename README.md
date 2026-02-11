@@ -1,76 +1,35 @@
 # FPGA Basys3 Labs
 
-My learning journey using the Digilent Basys3 FPGA while studying
-Digital Design and Computer Architecture (DDCA).
+A collection of small FPGA projects built whilst working through
+*Digital Design and Computer Architecture (DDCA)* using the Digilent Basys3 board.
 
-This repository contains small, incremental projects that build from
-basic digital logic towards concepts in computer architecture.
-
----
-
-## Why?
-
-To learn FPGA design step by step while documenting the process.
-Each folder represents a small lab that introduces a new concept.
-
-The goals are to:
-
-understand digital logic implemented in hardware
-
-practise Verilog and Vivado
-
-build towards larger and more complex FPGA projects
+Each folder is a short lab exploring a new concept.
 
 ---
 
 ## Hardware & Tools
 
-* **Board:** Digilent Basys3 (Artix-7 FPGA)
-* **Software:** Xilinx Vivado
-* **Language:** Verilog HDL
+* Basys3 (Artix-7 FPGA)
+* Xilinx Vivado
+* Verilog HDL
 
 ---
 
-## Project Roadmap
+## Projects
 
-### 01 — LED Blinker
+**01 — LED Blink**
+Blink an LED using a clock divider.
 
-Generate a clock divider and blink an LED.
-
-Concepts:
-
-* FPGA clock
-* Counters and clock division
-* Generating my first bitstream
+**02 — Switch → LED Mirror**
+Wire the 16 slide switches directly to the 16 LEDs.
 
 ---
 
-### 02 — Switch to LED Mirror
+## Aim
 
-Connect the 16 slide switches directly to the 16 LEDs.
-
-Concepts:
-
-* FPGA inputs & outputs
-* Constraints (XDC)
-* Combinational logic
-
----
-
-### Upcoming Projects
-
-* 03 — 4-bit Binary Adder
-* 04 — Signed Overflow Detector
-* 05 — 7-Segment Display Driver
-* 06 — Binary Counter Demo
-* 07 — Mini Calculator
+Work up from basic digital logic towards implementing a simple CPU on an FPGA.
 
 
-## Vision
-
-Progress from basic digital logic to a simple CPU on FPGA.
-
----
 
 ## References
 
